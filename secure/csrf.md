@@ -12,7 +12,7 @@
 禁用CORS(cross-origin request) 跨域请求。
 
 ## laravel中CSRF验证原理：
-1、开启session时，生成一个token值并存放在session中。
+1、开启session时，生成一个token值并存放在session中。</br>
 2、通过中间件verifyToken，先isreeding()判断请求是否CRSF验证，过滤掉自定义数组except中的请求。最后调用token match方法验证请求的token值与session中的token值是否匹配。
 
 ## 总结：
